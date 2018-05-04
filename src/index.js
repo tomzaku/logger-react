@@ -11,7 +11,9 @@ const addSpacer = (text ='', length) => {
 const makeLog = (text, type) => {
   const { background = 'black', color= 'white', label, icon= ' ' } = type;
   const labelIcon = `${icon} ${label}`;
-  console.log(`%c ${addSpacer(labelIcon, 10)}`, `background: ${background}; color: ${color}; font-size: small`, text)
+  return function(...text) {
+    console.log(`%c ${addSpacer(labelIcon, 10)}`, `background: ${background}; color: ${color}; font-size: small`, ...text)
+  }
 }
 
 const Logger = () => {
@@ -19,7 +21,7 @@ const Logger = () => {
     Object.keys(types).map(type => {
       return {
          [type]: (text) => {
-          makeLog(text, types[type])
+          makeLog(types[type])(text)
         }
       }
     })
