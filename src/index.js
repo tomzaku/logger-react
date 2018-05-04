@@ -11,7 +11,7 @@ const addSpacer = (text ='', length) => {
 const makeLog = (text, type) => {
   const { background = 'black', color= 'white', label, icon= ' ' } = type;
   const labelIcon = `${icon} ${label}`;
-  console.log(`%c ${addSpacer(labelIcon, 10)}`, `background: ${background}; color: ${color}; font-size: small`, `${text}`)
+  console.log(`%c ${addSpacer(labelIcon, 10)}`, `background: ${background}; color: ${color}; font-size: small`, text)
 }
 
 const Logger = () => {
