@@ -1,0 +1,36 @@
+{
+  "name": "logger-react",
+  "version": "1.0.0",
+  "description": "The logger of react-native, react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src --out-dir ./lib --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomzaku/logger-react.git"
+  },
+  "keywords": [
+    "logger",
+    "console",
+    "react",
+    "react-native"
+  ],
+  "author": "Zaku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomzaku/logger-react/issues"
+  },
+  "homepage": "https://github.com/tomzaku/logger-react#readme",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
