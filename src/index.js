@@ -8,7 +8,7 @@ const addSpacer = (text ='', length) => {
   }
   return text + multiSpacer
 }
-const makeLog = (text, type) => {
+const makeLog = (type) => {
   const { background = 'black', color= 'white', label, icon= ' ' } = type;
   const labelIcon = `${icon} ${label}`;
   return function(...text) {
@@ -20,8 +20,8 @@ const Logger = () => {
   const logger = R.mergeAll(
     Object.keys(types).map(type => {
       return {
-         [type]: (text) => {
-          makeLog(types[type])(text)
+         [type]: (...text) => {
+          makeLog(types[type])(...text)
         }
       }
     })

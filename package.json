@@ -1,5 +1,5 @@
 {
-  "name": "react-logger",
+  "name": "react-consola",
   "version": "1.0.0",
   "description": "The logger of react-native, react",
   "main": "./src/index.js",
