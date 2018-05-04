@@ -1,52 +1,63 @@
 export default {
   fatal: {
     level: 0,
-    color: 'red',
-    label: 'Fatal'
+    background: 'red',
+    label: 'Fatal',
+    icon: '✖'
   },
   error: {
     level: 0,
-    color: 'red',
-    label: 'Error'
+    background: 'red',
+    label: 'Error',
+    icon: '✖'
   },
   warn: {
     level: 1,
-    color: 'yellow',
-    label: 'Warning'
+    background: 'yellow',
+    color: 'black',
+    label: 'Warning',
+    icon: '⚠',
   },
   log: {
     level: 2,
-    color: 'white',
+    background: 'white',
     label: 'Log',
+    icon: 'l'
   },
   info: {
     level: 2,
-    color: 'blue',
+    background: 'blue',
     label: 'Info',
+    icon: 'ℹ',
   },
   start: {
     level: 3,
-    color: 'blue',
+    background: 'blue',
     label: 'Start',
+    icon: '●',
   },
   success: {
     level: 3,
-    color: 'green',
+    background: 'green',
     label: 'Success',
+    icon: '✔',
   },
   ready: {
     level: 3,
-    color: 'green',
+    background: 'green',
     label: 'Ready',
+    icon: '♥',
   },
   debug: {
     level: 4,
-    color: 'grey',
+    background: 'grey',
     label: 'Debug',
+    icon: '…',
   },
   trace: {
     level: 5,
-    color: 'white',
-    label: 'Trace'
+    background: 'white',
+    label: 'Trace',
+    icon: '…',
   }
 }

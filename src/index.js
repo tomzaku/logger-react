@@ -9,8 +9,9 @@ const addSpacer = (text ='', length) => {
   return text + multiSpacer
 }
 const makeLog = (text, type) => {
-  const { background = 'white', color, label } = type;
-  console.log(`${addSpacer(label, 9)} ${text}`, `background: ${background}; color: ${color}`)
+  const { background = 'black', color= 'white', label, icon= ' ' } = type;
+  const labelIcon = `${icon} ${label}`;
+  console.log(`%c ${addSpacer(labelIcon, 10)}`, `background: ${background}; color: ${color}; font-size: small`, `${text}`)
 }
 
 const Logger = () => {
@@ -26,4 +27,3 @@ const Logger = () => {
   return logger
 }
 export default Logger()
-
